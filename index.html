@@ -77,8 +77,6 @@
         }
     </style>
 </head>
-
-
 <body>
     <div class="container">
         <header>
@@ -99,25 +97,44 @@
                 <li><strong>GitHub:</strong> É a plataforma na web, o serviço de hospedagem que armazena seus repositórios remotamente. Ele usa o Git para funcionar, mas adiciona uma camada social e de colaboração sobre ele.</li>
             </ul>
 
-            <h2>Principais Comandos Linux para usar o Git Bash</h2>
-            <p>O <strong>Git Bash</strong> é um emulador de terminal que permite usar comandos Linux no Windows. Aqui estão alguns comandos básicos e essenciais:</p>
-            <ul>
-                <li><code>ls</code>: Lista os arquivos e diretórios no diretório atual.</li>
-                <li><code>cd &lt;diretório&gt;</code>: Entra em um diretório específico. Por exemplo, <code>cd Desktop</code>.</li>
-                <li><code>pwd</code>: Exibe o caminho do diretório atual.</li>
-                <li><code>mkdir &lt;nome_do_diretório&gt;</code>: Cria um novo diretório.</li>
-                <li><code>rm -rf &lt;nome_do_diretório&gt;</code>: Remove um diretório e todo o seu conteúdo.</li>
-                <li><code>touch &lt;nome_do_arquivo&gt;</code>: Cria um arquivo vazio.</li>
-            </ul>
+            <h2>Comandos Git presentes no repositório caixetovisk/aula_git</h2>
+            <p>Os comandos abaixo são encontrados no arquivo README.md do repositório e são essenciais para iniciar e gerenciar seu projeto Git.</p>
+            <h3>Inicializar uma pasta com git</h3>
+            <pre><code>git init</code></pre>
 
-            <h2>Principais Comandos Git para o repositório</h2>
-            <p>A seguir, comandos comuns para interagir com o repositório <code>caixetovisk/aula_git</code>, como indicado no arquivo <code>README.md</code>:</p>
-            <ul>
-                <li><code>git clone &lt;URL&gt;</code>: Clona um repositório existente do GitHub para a sua máquina local. Ex: <code>git clone https://github.com/caixetovisk/aula_git.git</code>.</li>
-                <li><code>git add .</code>: Adiciona todos os arquivos alterados ao "staging area", preparando-os para o próximo commit.</li>
-                <li><code>git commit -m "mensagem"</code>: Salva as alterações no histórico local do repositório, junto com uma mensagem descritiva.</li>
-                <li><code>git push origin main</code>: Envia as alterações da sua máquina local para o repositório remoto (no GitHub).</li>
-            </ul>
+            <h3>Adicionar arquivos para gerar uma versão do git</h3>
+            <pre><code>git add .</code></pre>
+
+            <h3>Para gerar uma versão</h3>
+            <pre><code>git commit -m "Uma mensagem do que foi feito"</code></pre>
+
+            <h3>Verificar arquivos que foram alterados</h3>
+            <pre><code>git status</code></pre>
+
+            <h3>Verificar o log das modificações</h3>
+            <pre><code>git log</code></pre>
+            
+            <p>Além dos comandos do repositório, os comandos Linux básicos são úteis para navegar e gerenciar arquivos no terminal.</p>
+            <h3>Entrar em uma pasta</h3>
+            <pre><code>cd projetos</code></pre>
+
+            <h3>Listar conteúdo</h3>
+            <pre><code>ls projetos</code></pre>
+            
+            <h3>Criar pasta</h3>
+            <pre><code>mkdir projetos</code></pre>
+            
+            <h3>Renomear pasta</h3>
+            <pre><code>mv projetos novo_nome</code></pre>
+            
+            <h3>Mover pasta</h3>
+            <pre><code>mv projetos caminho_para_ir</code></pre>
+            
+            <h3>Excluir pasta</h3>
+            <pre><code>rm -rf projetos</code></pre>
+            
+            <h3>Copiar arquivo</h3>
+            <pre><code>cp projetos novo_nome</code></pre>
 
             <h2>Como criar um repositório no GitHub</h2>
             <ol>
@@ -164,10 +181,8 @@ git push
         </section>
 
         <footer class="footer">
-            <p>Criado por [Seu Nome Completo]</p>
+            <p>Criado por [flavyo ferreira]</p>
         </footer>
     </div>
 </body>
-
-
 </html>
