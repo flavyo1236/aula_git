@@ -4,7 +4,7 @@
 Sempre configurar as credênciais do git.
  
 ```bash
-git config --global user.name "preto fudido"
+git config --global user.name "flavyo ferreira"
 git config --global user.gmail flavyo.ferreiradeoliveira@gmail.com
 ```
  git remote add origin https://github.com/fravyn/aula_nigger.git

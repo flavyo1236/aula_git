@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao Git e GitHub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            border-bottom: #77aaff 3px solid;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            margin-top: 25px;
+        }
+
+        h3 {
+            color: #555;
+            margin-top: 15px;
+        }
+
+        p, ul, pre {
+            margin-bottom: 15px;
+        }
+
+        pre {
+            background: #eee;
+            padding: 10px;
+            border: 1px solid #ddd;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #e0e0e0;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            color: #fff;
+            background: #333;
+            border-top: #77aaff 3px solid;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Introdução ao Git e GitHub</h1>
+        </header>
+
+        <section>
+            <h2>O que é o Git?</h2>
+            <p>O <strong>Git</strong> é um sistema de controle de versão distribuído, open-source e gratuito, criado por Linus Torvalds. Ele é projetado para lidar com tudo, desde pequenos a grandes projetos, com velocidade e eficiência. O Git permite que desenvolvedores trabalhem em um mesmo projeto simultaneamente, rastreando todas as alterações feitas nos arquivos ao longo do tempo. Isso facilita a colaboração, permite reverter para versões anteriores e gerenciar o histórico do código.</p>
+
+            <h2>O que é o GitHub?</h2>
+            <p>O <strong>GitHub</strong> é uma plataforma de hospedagem de código para controle de versão e colaboração, que usa o Git. Ele funciona como um "repositório" online, onde você pode armazenar seus projetos (repositórios Git) e colaborar com outras pessoas. O GitHub oferece funcionalidades sociais, como a capacidade de seguir outros usuários, visualizar seus projetos, e abrir "pull requests" para sugerir alterações no código de outras pessoas.</p>
+
+            <h2>Diferenças entre Git e GitHub</h2>
+            <p>É comum confundir os dois, mas a diferença é simples:</p>
+            <ul>
+                <li><strong>Git:</strong> É a ferramenta de software, o sistema de controle de versão que você instala e executa no seu computador. Ele gerencia as versões do seu código localmente.</li>
+                <li><strong>GitHub:</strong> É a plataforma na web, o serviço de hospedagem que armazena seus repositórios remotamente. Ele usa o Git para funcionar, mas adiciona uma camada social e de colaboração sobre ele.</li>
+            </ul>
+
+            <h2>Principais Comandos Linux para usar o Git Bash</h2>
+            <p>O <strong>Git Bash</strong> é um emulador de terminal que permite usar comandos Linux no Windows. Aqui estão alguns comandos básicos e essenciais:</p>
+            <ul>
+                <li><code>ls</code>: Lista os arquivos e diretórios no diretório atual.</li>
+                <li><code>cd &lt;diretório&gt;</code>: Entra em um diretório específico. Por exemplo, <code>cd Desktop</code>.</li>
+                <li><code>pwd</code>: Exibe o caminho do diretório atual.</li>
+                <li><code>mkdir &lt;nome_do_diretório&gt;</code>: Cria um novo diretório.</li>
+                <li><code>rm -rf &lt;nome_do_diretório&gt;</code>: Remove um diretório e todo o seu conteúdo.</li>
+                <li><code>touch &lt;nome_do_arquivo&gt;</code>: Cria um arquivo vazio.</li>
+            </ul>
+
+            <h2>Principais Comandos Git para o repositório</h2>
+            <p>A seguir, comandos comuns para interagir com o repositório <code>caixetovisk/aula_git</code>, como indicado no arquivo <code>README.md</code>:</p>
+            <ul>
+                <li><code>git clone &lt;URL&gt;</code>: Clona um repositório existente do GitHub para a sua máquina local. Ex: <code>git clone https://github.com/caixetovisk/aula_git.git</code>.</li>
+                <li><code>git add .</code>: Adiciona todos os arquivos alterados ao "staging area", preparando-os para o próximo commit.</li>
+                <li><code>git commit -m "mensagem"</code>: Salva as alterações no histórico local do repositório, junto com uma mensagem descritiva.</li>
+                <li><code>git push origin main</code>: Envia as alterações da sua máquina local para o repositório remoto (no GitHub).</li>
+            </ul>
+
+            <h2>Como criar um repositório no GitHub</h2>
+            <ol>
+                <li>Acesse o <a href="https://github.com" target="_blank">GitHub</a> e faça login.</li>
+                <li>No canto superior direito, clique no sinal de <strong>+</strong> e selecione <strong>New repository</strong>.</li>
+                <li>Dê um nome ao seu repositório. Opcionalmente, adicione uma descrição.</li>
+                <li>Escolha se o repositório será <strong>Public</strong> (público) ou <strong>Private</strong> (privado).</li>
+                <li>Clique em <strong>Create repository</strong>. Seu novo repositório está pronto!</li>
+            </ol>
+
+            <h2>Como ligar em um projeto existente na máquina</h2>
+            <p>Se você já tem um projeto em seu computador e quer enviá-lo para um novo repositório no GitHub, siga estes passos:</p>
+            <pre>
+                <code>
+cd /caminho/do/seu/projeto
+git init
+git add .
+git commit -m "Primeiro commit"
+git branch -M main
+git remote add origin https://github.com/seu_usuario/nome_do_repositorio.git
+git push -u origin main
+                </code>
+            </pre>
+            <p>Lembre-se de substituir <code>seu_usuario</code> e <code>nome_do_repositorio</code> pelos seus dados.</p>
+
+            <h2>Como gerar uma versão com Git</h2>
+            <p>Gerar uma nova versão significa criar um "commit", que é um instantâneo das alterações no seu projeto. Os passos são:</p>
+            <pre>
+                <code>
+git add .
+git commit -m "Descreva as alterações que você fez aqui"
+                </code>
+            </pre>
+            <p>É crucial escrever uma mensagem de commit clara para que você e outras pessoas entendam o que foi alterado.</p>
+
+            <h2>Como enviar da máquina para o GitHub</h2>
+            <p>Após gerar uma versão (commit) em sua máquina local, você precisa enviá-la para o repositório remoto no GitHub. Use o comando:</p>
+            <pre>
+                <code>
+git push
+                </code>
+            </pre>
+            <p>O comando <code>git push</code> envia os commits do seu repositório local para o repositório remoto, sincronizando as versões.</p>
+        </section>
+
+        <footer class="footer">
+            <p>Criado por [Seu Nome Completo]</p>
+        </footer>
+    </div>
+</body>
+
+
+</html>
